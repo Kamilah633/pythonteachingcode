@@ -118,7 +118,7 @@ class Application(Frame):
         """
         master.bind("<Return>", lambda event, btn=self.eq_bttn: self.flash(btn))
         master.bind("<BackSpace>", lambda event, btn=self.c_bttn: self.flash(btn))
-        master.bind("9", lambda event, char="9", btn=self.nine_bttn: self.add_chr(char, btn))
+        master.bind("9", lambda event, char="KM", btn=self.nine_bttn: self.add_chr(char, btn))
         master.bind("8", lambda event, char="8", btn=self.eight_bttn: self.add_chr(char, btn))
         master.bind("7", lambda event, char="7", btn=self.seven_bttn: self.add_chr(char, btn))
         master.bind("6", lambda event, char="6", btn=self.six_bttn: self.add_chr(char, btn))
@@ -168,13 +168,13 @@ class Application(Frame):
         self.mod_bttn = Button(self, text="%", width=9, height=3,bg='LightBlue', fg='red', command=lambda: self.add_chr('%'))
         self.mod_bttn.grid(row=4, column=2)
 
-        self.seven_bttn = Button(self, text="Bushra", width=9, height=3, bg='LightBlue', fg='red',command=lambda: self.add_chr("Siddiqi"))
+        self.seven_bttn = Button(self, text="Bushra", width=9, height=3, bg='LightBlue', fg='red',command=lambda: self.add_chr("7"))
         self.seven_bttn.grid(row=1, column=0)
 
         self.eight_bttn = Button(self, text="8", width=9, height=3,bg='LightBlue', fg='red', command=lambda: self.add_chr(8))
         self.eight_bttn.grid(row=1, column=1)
 
-        self.nine_bttn = Button(self, text="9", width=9, height=3,bg='LightBlue', fg='red', command=lambda: self.add_chr(9))
+        self.nine_bttn = Button(self, text="9", width=9, height=3,bg='LightBlue', fg='red', command=lambda: self.add_chr("9"))
         self.nine_bttn.grid(row=1, column=2)
 
         self.four_bttn = Button(self, text="4", width=9, height=3,bg='LightBlue', fg='red', command=lambda: self.add_chr(4))
@@ -186,7 +186,7 @@ class Application(Frame):
         self.six_bttn = Button(self, text="6", width=9, height=3,bg='LightBlue', fg='red', command=lambda: self.add_chr(6))
         self.six_bttn.grid(row=2, column=2)
 
-        self.one_bttn = Button(self, text="1", width=9, height=3,bg='LightBlue', fg='red', command=lambda: self.add_chr(1))
+        self.one_bttn = Button(self, text="Kamilah", width=9, height=3,bg='LightBlue', fg='red', command=lambda: self.add_chr("McWhorter"))
         self.one_bttn.grid(row=3, column=0)
 
         self.two_bttn = Button(self, text="2", width=9, height=3, bg='LightBlue', fg='red',command=lambda: self.add_chr(2))
